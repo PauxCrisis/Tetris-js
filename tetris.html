@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<title>Paula Crisistelli</title>
+	<meta charset="utf-">
+	<meta name="viewport" content="widht=device-widht, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="css/tetris.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src='js/tetris.js'></script>
+</head>
+<body onload='inicializa()' class="bg-dark">
+
+	<!-- Tetris -->
+    <div class="container mt-1" id="tetris">
+		<div class="row">
+			<!-- izquierda -->
+			<div class="col-md-2 text-center mt-5">
+				<div class="border border-light rounded-left">
+					<h6 class="text-light">Puntaje:</h6>
+					<h6 id="puntaje" class="text-light"></h6>
+				</div> 
+				<div class="border border-info rounded-left mt-2">
+					<h6 class="text-info">Piezas Jugadas:</h6>
+					<h6 id="piezas" class="text-info"></h6>
+				</div>
+				<div class="border border-warning rounded-left mt-2">
+					<h6 class="text-warning">Lineas Simples:</h6>
+					<h6 id="lineas1" class="text-warning"></h6>
+				</div>
+				<div class="border border-danger rounded-left mt-2">
+					<h6 class="text-danger">Lineas Dobles:</h6>
+					<h6 id="lineas2" class="text-danger"></h6>
+				</div>
+				<div class="border border-success rounded-left mt-2">
+					<h6 class="text-success">Lineas Triples:</h6>
+					<h6 id="lineas3" class="text-success"></h6>
+				</div>
+				<div class="border border-primary rounded-left mt-2">
+					<h6 class="text-primary">TETRIS:</h6>
+					<h6 id="lineas4" class="text-primary"></h6>
+				</div>
+			</div>
+			<!-- tetris -->
+			<div class="col-md-8 text-center mt-2 canvas">
+				<canvas id='canvas'>
+				</canvas>
+			</div>
+			<!-- derecha -->
+			<div class="col-md-2 text-center mt-5">
+				<div class="border border-info rounded-left mt-2">
+					<h6 class="text-info">Nivel:</h6>
+					<h6 id="nivel" class="text-info"></h6>
+				</div>
+				<div class="border border-warning rounded-left mt-2">
+					<h6 class="text-warning">Lineas Totales:</h6>
+					<h6 id="lineasTotales" class="text-warning"></h6>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+    <!-- fin Tetris -->
+
+</body>
+</html>
